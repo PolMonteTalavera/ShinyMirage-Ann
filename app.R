@@ -11,18 +11,24 @@ get_current_branch <- function() {
     branch <- "default"
   }
 
-  branch
+  trimws(branch)
 }
 
 current_branch <- get_current_branch()
 
-available_configs <- names(config::get())
+app_config <- tryCatch(
+  {
+    config::get(config = current_branch, file = "config.yml")
+  },
+  error = function(e) {
+    message("No config found for branch: ", current_branch)
+    message("Using default config instead.")
+    config::get(config = "default", file = "config.yml")
+  }
+)
 
-if (current_branch %in% available_configs) {
-  app_config <- config::get(config = current_branch)
-} else {
-  app_config <- config::get(config = "default")
-}
+print(paste("Current branch:", current_branch))
+print(app_config)
 
 ui <- fluidPage(
   titlePanel(app_config$app_name),
