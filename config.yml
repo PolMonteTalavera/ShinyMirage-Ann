@@ -1,11 +1,5 @@
 default:
-  app_name: "shinyMirage"
-  version: "v0.1.0"
-  logo: "logoAnn.png"
-  report: "reports/reportAnn.pdf"
-
-main:
-  app_name: "shinyMirage"
+  app_name: "shinyMirage - Default"
   version: "v0.1.0"
   logo: "logoAnn.png"
   report: "reports/reportAnn.pdf"
