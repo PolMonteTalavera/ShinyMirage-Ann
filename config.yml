@@ -1,0 +1,23 @@
+default:
+  app_name: "shinyMirage"
+  version: "v0.1.0"
+  logo: "logoAnn.png"
+  report: "reports/reportAnn.pdf"
+
+main:
+  app_name: "shinyMirage"
+  version: "v0.1.0"
+  logo: "logoAnn.png"
+  report: "reports/reportAnn.pdf"
+
+ann:
+  app_name: "shinyMirage - ANN"
+  version: "v0.1.0-ANN"
+  logo: "logoAnn.png"
+  report: "reports/reportAnn.pdf"
+
+werfen:
+  app_name: "shinyMirage - Werfen"
+  version: "v0.1.0-Werfen"
+  logo: "logoWerfen.png"
+  report: "reports/reportWerfen.pdf"
