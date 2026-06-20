@@ -1,17 +1,5 @@
 default:
-  app_name: "shinyMirage - Default"
+  app_name: "shinyMirage - Ann"
   version: "v0.1.0"
   logo: "logoAnn.png"
   report: "reports/reportAnn.pdf"
-
-progenika:
-  app_name: "shinyMirage - Progenika"
-  version: "v0.1.0-Progenika"
-  logo: "logoGrifols.png"
-  report: "reports/reportProgenika.pdf"
-
-werfen:
-  app_name: "shinyMirage - Werfen"
-  version: "v0.1.0-Werfen"
-  logo: "logoWerfen.png"
-  report: "reports/reportWerfen.pdf"
